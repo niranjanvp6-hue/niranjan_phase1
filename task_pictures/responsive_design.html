@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Design</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            background: lightgreen;
+            margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>Responsive Design</h2>
+
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>
